@@ -13,7 +13,6 @@ const Songs = () => {
       {
         playlist?.tracks.items.map((song, index) => {
           const { track } = song;
-          console.log(track);
           const { id } = track;
           return (<Song key={id} track={track} order={index+1} />);
         })

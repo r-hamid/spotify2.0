@@ -28,7 +28,6 @@ const Body = () => {
 
   useEffect(() => {
     setColor(shuffle(colors).pop());
-    console.log(`Selected Playlist: ${playlistId}`);
 
     if(spotifyApi.getAccessToken()) {
       spotifyApi.getPlaylist(playlistId).then((data) => {

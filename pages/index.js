@@ -3,6 +3,7 @@ import { getSession } from "next-auth/react";
 
 import Sidebar from "../components/Sidebar";
 import Body from "../components/Body";
+import Player from "../components/Player";
 
 export default function Home() {
   return (
@@ -17,8 +18,8 @@ export default function Home() {
           <Body />
         </main>
 
-        <footer>
-          {/* Footer Content */}
+        <footer className="sticky bottom-0 w-full">
+          <Player />
         </footer>
       </div>
     </>

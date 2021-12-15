@@ -30,7 +30,7 @@ const Sidebar = () => {
 
   return (
     <div className="text-gray-500 p-5 text-sm border-r border-gray-900 h-screen 
-    overflow-y-scroll scrollbar-hide">
+    overflow-y-scroll scrollbar-hide w-52 hidden md:flex">
       <div className="space-y-4">
         <button onClick={() => signOut()} className="flex items-center space-x-2 hover:text-white">
           <p> Logout </p>
